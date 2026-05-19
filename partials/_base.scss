@@ -1,0 +1,45 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: v.$fuente-cuerpo;
+  background-color: v.$color-fondo;
+  color: v.$color-texto;
+  min-height: 100vh;
+  @include m.flex-columna;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

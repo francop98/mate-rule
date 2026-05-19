@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactá a mate-rule. Estamos en Bahía Blanca y respondemos todas tus consultas sobre mates, bombillas y accesorios.">
+  <meta name="keywords" content="contacto, mate, Bahía Blanca, consultas, mate-rule">
+  <meta name="author" content="mate-rule">
+  <meta name="robots" content="index, follow">
+  <title>Contacto — mate-rule</title>
+  <link rel="icon" type="image/svg+xml" href="./documents/favicon.svg">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="logo" src="documentos/logo.png" alt="Logo de mate-rule" width="70" height="70">
+    <h1 class="site-title">mate-rule</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navPrincipal"
+        aria-controls="navPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../index.html">Mates</a></li>
+              <li><a class="dropdown-item" href="../pages/bombillas.html">Bombillas</a></li>
+              <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
+              <li><a class="dropdown-item" href="../pages/yerbas.html">Yerbas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/curar-mate.html">Cómo curar el mate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../pages/contacto.html" aria-current="page">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" aria-label="Buscar productos">
+          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar productos">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="breadcrumb-mate" aria-label="Ruta de navegación">
+    <a href="../index.html">Inicio</a>
+    <span>›</span>
+    <span>Contacto</span>
+  </nav>
+
+  <main>
+    <section class="seccion" aria-labelledby="titulo-contacto">
+      <h2 class="seccion__titulo" id="titulo-contacto">Contactanos</h2>
+      <p class="seccion__intro">
+        ¿Tenés alguna consulta sobre nuestros productos o querés hacer un pedido especial?
+        Completá el formulario y te respondemos a la brevedad.
+      </p>
+
+      <div class="container">
+        <div class="row g-5 justify-content-center">
+
+          <div class="col-12 col-md-6">
+            <form class="formulario-contacto" id="formContacto" novalidate aria-label="Formulario de contacto">
+              <h3 class="formulario-contacto__titulo">Envianos un mensaje</h3>
+
+              <div class="campo">
+                <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  aria-required="true"
+                  autocomplete="name">
+              </div>
+
+              <div class="campo">
+                <label for="celular">Teléfono / Celular</label>
+                <input
+                  type="tel"
+                  id="celular"
+                  name="celular"
+                  placeholder="(0291) 000-0000"
+                  autocomplete="tel">
+              </div>
+
+              <div class="campo">
+                <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                  aria-required="true"
+                  autocomplete="email">
+              </div>
+
+              <div class="campo">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Seleccioná un asunto…</option>
+                  <option value="consulta">Consulta sobre producto</option>
+                  <option value="pedido">Pedido especial</option>
+                  <option value="envio">Información de envíos</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  placeholder="Escribí tu consulta acá…"
+                  required
+                  aria-required="true"></textarea>
+              </div>
+
+              <button type="submit" class="formulario-contacto__btn">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <h3 style="font-family:'Playfair Display',serif;color:#5c3d1e;margin-bottom:16px;">Encontranos acá</h3>
+            <div class="mapa-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4911593699117!2d-62.25695672430254!3d-38.706531085586946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda3564e362d8f%3A0xa93644aedb1c86e0!2sSarmiento%201234%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1777055787348!5m2!1ses!2sar"
+                title="Ubicación de mate-rule en Bahía Blanca"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div style="margin-top:24px;line-height:2;color:#5c3d1e;">
+              <p>📍 <strong>Sarmiento 1234</strong>, Bahía Blanca, Buenos Aires</p>
+              <p>📞 <strong>(0291) 000-0000</strong></p>
+              <p>✉️ <strong>hola@materul.com.ar</strong></p>
+              <p>🕐 Lun–Vie: 9 a 18 hs / Sáb: 9 a 13 hs</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Pie de página">
+    <div class="footer__inner">
+      <div class="footer__marca">
+        <h3>mate-rule</h3>
+        <p>Tu tienda de mates artesanales en Bahía Blanca. Tradición, calidad y el sabor de siempre en cada sorbo.</p>
+      </div>
+      <div class="footer__contacto">
+        <h4>Contacto</h4>
+        <p>
+          📍 Sarmiento 1234, Bahía Blanca<br>
+          📞 (0291) 000-0000<br>
+          ✉️ hola@materul.com.ar
+        </p>
+      </div>
+    </div>
+    <p class="footer__copy">© Esta página está dedicada a mi abuela. Todos los derechos reservados.</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmAgdZ3K4rK3kPSRovGbYmQ5MwH"
+    crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

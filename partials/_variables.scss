@@ -1,0 +1,43 @@
+
+$color-primario:    #896941;   // marrón mate
+$color-secundario:  #5c3d1e;   // marrón oscuro
+$color-acento:      #c89a5a;   // dorado yerba
+$color-fondo:       #f4efe8;   // crema
+$color-fondo-alt:   #ede3d4;   // crema oscura
+$color-texto:       #2b1d0e;   // casi negro cálido
+$color-texto-claro: #fff8f0;   // blanco cálido
+$color-gris:        #7a6a5a;   // gris cálido
+$color-negro:       #1a1008;
+
+
+$primary:    $color-primario;
+$secondary:  $color-secundario;
+$dark:       $color-negro;
+$light:      $color-fondo;
+
+
+$fuente-titulo:  'Playfair Display', Georgia, serif;
+$fuente-cuerpo:  'Lato', 'Helvetica Neue', sans-serif;
+
+
+$espaciado-sm:  8px;
+$espaciado-md:  16px;
+$espaciado-lg:  32px;
+$espaciado-xl:  64px;
+
+
+$radio-tarjeta: 10px;
+$radio-btn:     6px;
+
+
+$sombra-suave:  0 4px 16px rgba(0,0,0,0.10);
+$sombra-hover:  0 8px 28px rgba(137,105,65,0.22);
+
+
+$transicion:    all 0.28s ease;
+
+
+$bp-sm:  576px;
+$bp-md:  768px;
+$bp-lg:  992px;
+$bp-xl:  1200px;

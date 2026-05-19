@@ -1,0 +1,82 @@
+@use 'variables' as v;
+
+
+@mixin flex-centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-columna($gap: 0) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+
+@mixin responsive($bp) {
+  @if $bp == sm {
+    @media (max-width: v.$bp-sm) { @content; }
+  } @else if $bp == md {
+    @media (max-width: v.$bp-md) { @content; }
+  } @else if $bp == lg {
+    @media (max-width: v.$bp-lg) { @content; }
+  } @else if $bp == xl {
+    @media (max-width: v.$bp-xl) { @content; }
+  }
+}
+
+
+@mixin hover-tarjeta {
+  transition: v.$transicion;
+  &:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: v.$sombra-hover;
+  }
+}
+
+
+@mixin boton($bg, $color: white) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: v.$radio-btn;
+  padding: 10px 22px;
+  font-family: v.$fuente-cuerpo;
+  font-weight: 600;
+  cursor: pointer;
+  transition: v.$transicion;
+
+  &:hover {
+    filter: brightness(0.88);
+    transform: translateY(-2px);
+  }
+}
+
+
+@mixin img-cover($h: 220px) {
+  width: 100%;
+  height: $h;
+  object-fit: cover;
+  display: block;
+}
+
+
+@mixin titulo-seccion {
+  font-family: v.$fuente-titulo;
+  color: v.$color-secundario;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: v.$espaciado-lg;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: v.$color-acento;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+}
